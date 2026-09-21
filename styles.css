@@ -1,0 +1,30 @@
+/* Parth Gambhir — static portfolio. Pure CSS, no JS, no animation. */
+:root{--bg:#0d1117;--fg:#c9d1d9;--muted:#8b949e;--link:#58a6ff;--border:#21262d;--accent:#3fb950}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace}
+a{color:var(--link)}
+a:hover{text-decoration:underline}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;padding:.5rem .75rem}
+.wrap{max-width:54rem;margin:0 auto;padding:0 1.25rem}
+header{border-bottom:1px solid var(--border)}
+header .wrap{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem 1.25rem;padding:1rem 1.25rem}
+.brand{margin-right:auto;color:var(--fg);font-weight:700;text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:1.25rem;margin:0;padding:0;list-style:none}
+main{padding:2.5rem 0}
+h1{margin:0 0 .25rem;font-size:1.5rem}
+h2{margin:2.5rem 0 .75rem;padding-bottom:.25rem;font-size:1.125rem;border-bottom:1px solid var(--border)}
+p{margin:.75rem 0}
+.muted{color:var(--muted)}
+.prompt{color:var(--accent)}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:.25rem 1rem;margin:.75rem 0}
+dt{color:var(--muted)}
+dd{margin:0}
+ul.list{margin:0;padding:0;list-style:none}
+ul.list>li{padding:.9rem 0;border-bottom:1px solid var(--border)}
+ul.list>li:first-child{border-top:1px solid var(--border)}
+.entry-title{margin:0;font-weight:600}
+.entry-meta{margin:.2rem 0 0;font-size:.875rem;color:var(--muted)}
+.status{color:var(--accent)}
+footer{padding:1.5rem 0;border-top:1px solid var(--border);color:var(--muted);font-size:.875rem}
+@media(max-width:30rem){dl{grid-template-columns:1fr}dt{margin-top:.5rem}}
